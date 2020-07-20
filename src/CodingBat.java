@@ -5,6 +5,8 @@ public class CodingBat {
         System.out.println(monkeyTrouble(true, true));
         System.out.println(sumDouble(1,2));
         System.out.println(sumDouble(2,3));
+
+        System.out.println("GitHub is kinda hard to use LOL");
     }
 
     public static boolean sleepIn(boolean weekday, boolean vacation){

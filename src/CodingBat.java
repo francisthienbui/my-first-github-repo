@@ -6,6 +6,7 @@ public class CodingBat {
         System.out.println(sumDouble(1,2));
         System.out.println(sumDouble(2,3));
         System.out.println(parrotTrouble(true,6));
+        System.out.println(makes10(9, 10));
 
         System.out.println("GitHub is kinda hard to use LOL");
     }
@@ -62,9 +63,23 @@ public class CodingBat {
                 result = false;
             }
         }
+        return result;
+    }
+
+    public static boolean makes10(int a, int b){
+        boolean result  = false;
+
+        int sum = a + b;
+
+        if( (a == 10) || (b == 10) ) {
+            result = true;
+        } else if ( sum == 10) {
+            result = true;
+        } else {
+            result = false;
+        }
 
         return result;
-
     }
 
 

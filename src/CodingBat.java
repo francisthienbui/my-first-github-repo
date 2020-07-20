@@ -7,6 +7,7 @@ public class CodingBat {
         System.out.println(sumDouble(2,3));
         System.out.println(parrotTrouble(true,6));
         System.out.println(makes10(9, 10));
+        System.out.println(diff21(2100000));
 
         System.out.println("GitHub is kinda hard to use LOL");
     }

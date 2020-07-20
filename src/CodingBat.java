@@ -4,6 +4,7 @@ public class CodingBat {
         System.out.println(sleepIn(false, false));
         System.out.println(monkeyTrouble(true, true));
         System.out.println(sumDouble(1,2));
+        System.out.println(sumDouble(2,3));
     }
 
     public static boolean sleepIn(boolean weekday, boolean vacation){

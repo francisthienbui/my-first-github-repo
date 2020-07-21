@@ -9,6 +9,9 @@ public class CodingBat {
         System.out.println(makes10(9, 10));
         System.out.println(diff21(2100000));
 
+        int[] arr = new int[]{1, 2, 2, 6, 99, 99, 7};
+        System.out.println(sum67(arr));
+
         System.out.println("GitHub is kinda hard to use LOL");
     }
 
@@ -81,6 +84,26 @@ public class CodingBat {
         }
 
         return result;
+    }
+
+    public static int sum67(int[] nums){
+        int sum = 0;
+        int annul7=0;
+        for (int i =0 ; i <nums.length;i++)
+        {
+            if(nums[i] == 6)
+            {
+                for( int j = i; nums[j] != 7;j++)
+                {
+                    nums[j] = 0;
+                    annul7 = j;
+                }
+                nums[annul7+1] =0;
+            }
+            else
+                sum += nums[i];
+        }
+        return sum;
     }
 
 

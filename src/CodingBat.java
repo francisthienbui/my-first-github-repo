@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class CodingBat {
 
     public static void main(String[] args){
@@ -12,7 +14,18 @@ public class CodingBat {
         int[] arr = new int[]{1, 2, 2, 6, 99, 99, 7};
         System.out.println(sum67(arr));
 
-        System.out.println("GitHub is kinda hard to use LOL");
+        int[] numArr = new int[]{1, 0, 1, 0, 0, 1, 1};
+        int[] modifiedArr = evenOdd(numArr);
+        System.out.print("[");
+        for(int i = 0; i < modifiedArr.length; i++){
+            if(i != modifiedArr.length - 1){
+                System.out.print(modifiedArr[i] + ", ");
+            } else {
+                System.out.print(modifiedArr[i] + "]");
+            }
+        }
+
+
     }
 
     public static boolean sleepIn(boolean weekday, boolean vacation){
@@ -104,6 +117,27 @@ public class CodingBat {
                 sum += nums[i];
         }
         return sum;
+    }
+
+    public static int[] evenOdd(int[] nums){
+        int[] arr = new int[nums.length];
+        int counter = 0;
+
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] % 2 == 0){
+                arr[counter] = nums[i];
+                counter++;
+            }
+        }
+
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] % 2 != 0){
+                arr[counter] = nums[i];
+                counter++;
+            }
+        }
+
+        return arr;
     }
 
 
